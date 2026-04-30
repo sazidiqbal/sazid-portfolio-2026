@@ -78,7 +78,7 @@ export default function HudOverlay({ sceneStateRef }) {
           ref={progressRef}
           className="mt-2 font-display text-4xl font-semibold text-white"
         >
-          00%
+          100%
         </p>
       </div>
     </div>

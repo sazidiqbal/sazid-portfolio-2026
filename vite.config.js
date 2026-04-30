@@ -6,7 +6,7 @@ import react from "@vitejs/plugin-react";
 const srcPath = fileURLToPath(new URL("./src", import.meta.url));
 
 export default defineConfig({
-  base: "./",
+  base: "/sazid-portfolio-2026/",
   plugins: [react()],
   resolve: {
     alias: {
