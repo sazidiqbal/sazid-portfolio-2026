@@ -68,14 +68,14 @@ export default function TunnelField({ ringCount }) {
 
   return (
   <group>
-    {/* <instancedMesh ref={stripsRef} args={[null, null, stripData.length]}>
+    <instancedMesh ref={stripsRef} args={[null, null, stripData.length]}>
       <boxGeometry args={[1, 1, 1]} />
       <meshBasicMaterial
         color={new Color("#ffffff")}
         transparent
         opacity={0.65}
       />
-    </instancedMesh> */}
+    </instancedMesh>
 
     <mesh position={[0, -2.65, -88]} rotation={[-Math.PI / 2, 0, 0]}>
       <planeGeometry args={[16, 200]} />
