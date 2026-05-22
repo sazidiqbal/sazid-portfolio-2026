@@ -63,7 +63,7 @@ export default function ProjectsSequence() {
 
                     <div className="mt-8 grid gap-4 md:grid-cols-[minmax(0,0.7fr)_minmax(180px,0.3fr)]">
                       <p className="text-base leading-8 text-white/72">{project.detail}</p>
-                      <div className="rounded-2xl border border-white/8 bg-white/[0.03] p-4">
+                      <div className="rounded-2xl border border-white/8 bg-white/[10] p-4">
                         <p className="hud-caption text-[0.62rem] text-fog/60">chapter pulse</p>
                         <div className="mt-4 space-y-3">
                           <div className="h-1.5 w-full overflow-hidden rounded-full bg-white/8">

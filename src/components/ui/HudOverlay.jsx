@@ -9,6 +9,7 @@ function getStageLabel(progress) {
 export default function HudOverlay({ sceneStateRef }) {
   const progressRef = useRef(null);
   const labelRef = useRef(null);
+  const plutoLineRef = useRef(null);
 
   useEffect(() => {
     let frameId = 0;
@@ -24,6 +25,12 @@ export default function HudOverlay({ sceneStateRef }) {
 
       if (labelRef.current) {
         labelRef.current.textContent = getStageLabel(progress);
+      }
+
+      if (plutoLineRef.current) {
+        const visible = progress > 0.965;
+        plutoLineRef.current.style.opacity = visible ? "1" : "0";
+        plutoLineRef.current.style.transform = visible ? "translate(-50%, 0)" : "translate(-50%, 10px)";
       }
 
       frameId = window.requestAnimationFrame(tick);
@@ -80,6 +87,13 @@ export default function HudOverlay({ sceneStateRef }) {
         >
           100%
         </p>
+      </div>
+
+      <div
+        ref={plutoLineRef}
+        className="absolute bottom-10 left-1/2 max-w-[32rem] -translate-x-1/2 rounded-full border border-white/18 bg-black/42 px-5 py-3 text-center text-sm text-white/82 opacity-0 shadow-[0_10px_44px_rgba(116,151,255,0.16)] backdrop-blur-2xl transition duration-500"
+      >
+        Pluto: not a planet, still the main character.
       </div>
     </div>
   );
