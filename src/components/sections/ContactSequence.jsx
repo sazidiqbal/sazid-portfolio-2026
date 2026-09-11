@@ -79,14 +79,14 @@ export default function ContactSequence() {
             </div>
 
             <div className="mt-8 flex flex-wrap gap-4">
-<a
-  href="https://mail.google.com/mail/?view=cm&fs=1&to=sazidiqbalh@gmail.com&su=Let's%20build%20something%20unforgettable"
-  target="_blank"
-  rel="noreferrer"
-  className="inline-flex min-h-12 items-center rounded-full border border-cyan/30 bg-cyan/10 px-6 text-sm font-semibold uppercase tracking-[0.22em] text-white transition-transform duration-300 hover:-translate-y-0.5 hover:bg-cyan/16"
->
-  Start the conversation
-</a>
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=sazidiqbalh@gmail.com&su=Let's%20build%20something%20unforgettable"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex min-h-12 items-center rounded-full border border-cyan/30 bg-cyan/10 px-6 text-sm font-semibold uppercase tracking-[0.22em] text-white transition-transform duration-300 hover:-translate-y-0.5 hover:bg-cyan/16"
+            >
+              Start the conversation
+            </a>
 
               <a
                 href="#top"

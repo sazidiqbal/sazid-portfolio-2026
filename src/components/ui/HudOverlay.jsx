@@ -44,7 +44,7 @@ export default function HudOverlay({ sceneStateRef }) {
   return (
     <div className="pointer-events-none fixed inset-0 z-20 hidden xl:block">
       {/* Top Left */}
-      <div className="absolute left-8 top-28">
+      {/* <div className="absolute left-8 top-28">
         <div className="rounded-3xl border border-white/20 bg-white/6 px-5 py-4 backdrop-blur-2xl shadow-[0_8px_40px_rgba(255,255,255,0.06)]">
           <p className="text-[0.62rem] uppercase tracking-[0.28em] text-white/45">
             sequence mode
@@ -53,7 +53,7 @@ export default function HudOverlay({ sceneStateRef }) {
             CINEMATIC DRIVE
           </p>
         </div>
-      </div>
+      </div> */}
 
       {/* Bottom Left */}
       <div className="absolute bottom-8 left-8 max-w-[15rem]">

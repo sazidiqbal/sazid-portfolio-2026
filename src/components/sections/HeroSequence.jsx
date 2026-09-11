@@ -74,14 +74,14 @@ export default function HeroSequence() {
 
             <div className="mt-8 space-y-5">
               {heroStats.map((item) => (
-                <article key={item.label} className="rounded-2xl border border-white/8 bg-white/[0.03] p-4">
+                <article key={item.label} className="rounded-2xl border border-white/8 bg-black/[0.58] p-4">
                   <p className="hud-caption text-[0.62rem] text-fog/58">{item.label}</p>
                   <p className="mt-2 text-sm leading-7 text-white/82">{item.value}</p>
                 </article>
               ))}
             </div>
 
-            <div className="mt-8 rounded-2xl border border-white/8 bg-white/[0.03] p-4">
+            <div className="mt-8 rounded-2xl border border-white/8 bg-black/[0.58] p-4">
               <p className="hud-caption text-[0.62rem] text-fog/58">mood vector</p>
               <div className="mt-3 space-y-3">
                 <div className="h-1.5 w-full overflow-hidden rounded-full bg-white/8">
